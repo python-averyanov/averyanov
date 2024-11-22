@@ -7,24 +7,23 @@ try:
    a = int(input('сторона а  '))# вводим числа
    b = int(input('сторона b  '))
    c = int(input('сторона квадрата  '))
+   high = 0
+   widht = 0
+   while a >= c:  # считаем, сколько квадратов можно разместить по высоте
+       a -= c
+       high += 1
+
+   while b >= c:  # тоже самое, только с шириной
+       b -= c
+       widht += 1
+
+   squares = 0
+   for _ in range(high):  # считаем результат
+       squares += widht
+   print(squares)
+
+
 except ValueError:# Если что то идет не так, используем заготовленные переменные
-    a = 10
-    b = 23
-    c = 3
-
-high = 0
-widht = 0
-while a >= c:# считаем, сколько квадратов можно разместить по высоте
-    a -= c
-    high += 1
-
-while b >= c:# тоже самое, только с шириной
-    b -= c
-    widht += 1
-
-squares = 0
-for _ in range(high):# считаем результат
-    squares += widht
-print(squares)
+    print("вы ввели не число")
 
 
