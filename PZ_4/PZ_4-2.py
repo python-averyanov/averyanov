@@ -10,7 +10,7 @@ try:
    high = 0
    widht = 0
    while a >= c:  # считаем, сколько квадратов можно разместить по высоте
-       a -= c
+       a = a - c
        high += 1
 
    while b >= c:  # тоже самое, только с шириной
@@ -19,7 +19,7 @@ try:
 
    squares = 0
    for _ in range(high):  # считаем результат
-       squares += widht
+       squares = squares + widht
    print(squares)
 
 
