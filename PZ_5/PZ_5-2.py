@@ -3,14 +3,19 @@
 #переменные B, C и D. С помощью этой функции найти вторую, третью и четвертую
 #степень пяти данных чисел.
 def powerA234(A):#создали функцию
-    B = A * A
-    C = A * A * A
-    D = A * A * A * A
-    print(B,C,D)
+    B = A ** 2
+    C = A ** 3
+    D = A ** 4
+    return B, C, D
+
+
 for i in range(1,6):#выполнится 5 раз
    try:
       k = int(input("введи число"))# вводим число
    except ValueError:
        print("минус попытка")
-       k = 0
-   powerA234(k)#вызываем функцию
+       continue
+   B, C, D, = powerA234(k)
+   print(B,C,D)
+
+
