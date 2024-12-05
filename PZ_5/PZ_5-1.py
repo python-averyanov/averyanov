@@ -3,23 +3,25 @@
 #получится нуль?
 
 def PR4():#создали функцию
-    try:
-        a = input("введите число   ")
-        ad = list(map(int, a))
-        b = sum(ad)
-        kol = 0
-        while True:
-            kol = kol + 1  # подсчет количества выполнений цикла
-            a = int(a) - b
-            print("количество выполнений цикла:", kol)  # выводим
-            print("____________________________________")
-            if int(a) > 0:  # если 'а' больше 0, продолжаем
-                continue
-            else:
-                print("итоговое число:", a)
-                break
-    except ValueError:
-        print("вы ввели не число")
+    a = input("введите число   ")
+    ad = list(map(int, a))
+    b = sum(ad)
+    kol = 0
+    while True:
+        kol = kol + 1#подсчет количества выполнений цикла
+        a = int(a) - b
+        print("количество выполнений цикла:", kol)#выводим
+        print("____________________________________")
+        if int(a) > 0:#если 'а' больше 0, продолжаем
+            continue
+        else:
+            print("итоговое число:", a)
+            break
+def funcs():#
+    print("вызвать функцию?  ")
+    answer = int(input("если да, введите 1, если нет, введите 0   "))
+    if answer ==1:
         PR4()
-
-PR4()
+    else:
+        print("как знаете")
+funcs()
