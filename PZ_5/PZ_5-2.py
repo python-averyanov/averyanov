@@ -16,6 +16,8 @@ for i in range(1,6):#выполнится 5 раз
        print("минус попытка")
        continue
    B, C, D, = powerA234(k)
-   print(B,C,D)
+   print("вторая степень", B)
+   print("третья степень", C)
+   print("четвертая степень", D)
 
 
