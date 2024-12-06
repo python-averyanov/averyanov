@@ -9,12 +9,13 @@ def PR4():#создали функцию
         a = input("введите число   ")
         kol = 0
         while True:
-            a = str(a)
-            for i in a:
+            c = str(a)
+            for i in c:
                 listy.append(int(i))
             b = sum(listy)
             kol = kol + 1  # подсчет количества выполнений цикла
             a = int(a) - b
+            listy.clear()
             print("количество выполнений цикла:", kol)  # выводим
             print("____________________________________")
             if int(a) > 0:  # если 'а' больше 0, продолжаем
