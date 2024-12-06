@@ -8,7 +8,7 @@ def PR4():#создали функцию
     try:
         a = input("введите число   ")
         kol = 0
-        while True:
+        while int(a) > 0:
             c = str(a)
             for i in c:
                 listy.append(int(i))
@@ -18,10 +18,6 @@ def PR4():#создали функцию
             listy.clear()
             print("количество выполнений цикла:", kol)  # выводим
             print("____________________________________")
-            if int(a) > 0:  # если 'а' больше 0, продолжаем
-                continue
-            else:
-                break
     except ValueError:
         print("вы ввели не число")
         PR4()
