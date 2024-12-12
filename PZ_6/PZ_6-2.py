@@ -13,3 +13,5 @@ for i in range(len(a)-1):
         b.append(a[i])
 print("сам список ",a)
 print("числа, больше правого соседа ",b)
+print("их количество ", len(b))
+
