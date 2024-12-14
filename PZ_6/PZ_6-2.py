@@ -6,10 +6,10 @@ N = int(input("введите число:  "))
 a = []
 b = []
 for o in range(1,N):
-    a.append(random.randint(1,N))
+    a.append(random.randint(1,N)) # формируем список из рандомных чисел
 
 for i in range(len(a)-1):
-    if a[i] > a[i + 1]:
+    if a[i] > a[i + 1]: # если число больше правого соседа, добавляем его в новый список
         b.append(a[i])
 print("сам список ",a)
 print("числа, больше правого соседа ",b)
