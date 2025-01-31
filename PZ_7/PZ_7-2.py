@@ -4,7 +4,7 @@
 #вывести или номер позиции, в которой расположена первая ошибочная скобка,
 #или, если закрывающих скобок не хватает, число —1.
 
-def check_brackets(s: str) -> int:
+def che(s: str) -> int:
     round = 0
     square = 0
     curly = 0
@@ -39,4 +39,4 @@ def check_brackets(s: str) -> int:
 
 # Ввод строки
 s = input()
-print(check_brackets(s))
+print(che(s))
