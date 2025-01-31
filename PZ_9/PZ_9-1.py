@@ -1,11 +1,11 @@
-a = "Изучаем язык Питон "
+a = "Изучаем язык Питон Питон "
 words = a.split()
 print(words)
 dic = {}
-for word in words:
-    if word in dic:
-        dic[word] += 1
+for i in words:
+    if i in dic:
+        dic[i] += 1
     else:
-        dic[word] = 1
-for word, col in dic.items():
-    print(f"{word}: {col}")
+        dic[i] = 1
+for i, col in dic.items():
+    print(f"{i}: {col}")
