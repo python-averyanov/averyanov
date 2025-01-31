@@ -6,4 +6,4 @@ b = paterochka - magnit
 print("нет в магните ",b)#1
 print("перечень всех товаров: ", paterochka | magnit) #3
 print(magnit is paterochka) #4
- 
+  
