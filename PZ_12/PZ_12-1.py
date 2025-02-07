@@ -29,6 +29,8 @@ if len(B) > len(C):
     aga(C)
 elif len(B) < len(C):
     aga(B)
+elif len(B) == len(C):
+    aga(B)
 
 
 
