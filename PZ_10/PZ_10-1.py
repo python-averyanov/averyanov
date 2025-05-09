@@ -1,9 +1,24 @@
-paterochka  = {"мясо","молоко","сыр"}
-magnit = {"молоко","соль","сахар"}
-a = magnit - paterochka
-print("нет в пятерке ",a)#2
-b = paterochka - magnit
-print("нет в магните ",b)#1
-print("перечень всех товаров: ", paterochka | magnit) #3
-print(magnit is paterochka) #4
-  
+# Вариант 1.
+# В магазинах имеются следующие товары. Магнит – молоко, соль, сахар. Пятерочка –
+# мясо, молоко, сыр. Определить:
+# 1. какие товары из Магнита, отсутствуют в Пятерочке.
+# 2. какие товары из Пятерочки, отсутствуют в Магните
+# 3. полный перечень всех товаров.
+# 4. равны ли перечни товаров
+
+# paterochka  = {"мясо","молоко","сыр"}
+# magnit = {"молоко","соль","сахар"}
+# a = magnit - paterochka
+# print("нет в пятерке ",a)#2
+# b = paterochka - magnit
+# print("нет в магните ",b)#1
+# print("перечень всех товаров: ", paterochka | magnit) #3
+# print(magnit is paterochka) #4
+
+listy = [1,2,3,4,5,6,7,8,9,12]
+new_list = []
+for i in listy:
+    if not i % 4 and i % 10 == 2:
+        new_list.append(i)
+print(len(new_list))
+

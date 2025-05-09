@@ -32,7 +32,6 @@ def che(s: str) -> int:
                 return i + 1
             curly -= 1
 
-    # Если остались незакрытые скобки
     if round > 0:
         return s.index('(') + 1
     if square > 0:
