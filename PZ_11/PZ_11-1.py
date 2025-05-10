@@ -20,6 +20,7 @@ lis = []
 for i in result:
     if i <= 1 and i % 2 == 0:
         lis.append(i)
+print(f'отрицательные элементы {lis}')
 print(f'количество элементов {len(lis)}') #2
 print(f'сумма отрицательных чисел {sum(lis)}')#3
 finall = sum(lis) / len(lis)
