@@ -1,5 +1,3 @@
-from os import write
-
 with open('text18-1.txt', 'r', encoding="utf=16") as file:
     lines = file.readlines()
 print(a := ''.join(lines)) #1
