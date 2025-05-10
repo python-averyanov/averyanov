@@ -3,7 +3,7 @@ with open('text18-1.txt', 'r', encoding="utf=16") as file:
 print(a := ''.join(lines)) #1
 
 a2 = list(filter(str.isupper,a))
-print(a2) #2
+print(f"количество заглавных букв {len(a2)}") #2
 
 print(lines)
 

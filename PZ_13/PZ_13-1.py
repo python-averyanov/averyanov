@@ -7,6 +7,8 @@ b = np.array([[1, 2, 3, 4],
               [-9, 10, 11, 12]])
 a = np.delete(b, 0, 0)
 a = np.delete(a, -1, 1)
+a = np.delete(a, 0, -1)
+a = np.delete(a, -1, 0)
 print(f"новая матрица: \n{a}")
 a[a <= 0] = a[a <= 0] * a[a <= 0]
 print(f'отрицательные элементы в квадрате: \n{a}')
