@@ -1,10 +1,12 @@
+# Из текстового файла (writer.txt) выбрать фамилии писателей, посчитать количество
+# фамилий. Создать новый файл, в котором выполнить замену слова «роман» на слово
+# «произведение».
 import re
 with open('writer.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 surnames = re.findall(r'\b[А-ЯЁ][а-яё]+\b', text)
 
 unique= set(surnames)
-
 print(f'Найдено фамилий: {len(surnames)}')
 print(f'Уникальных фамилий: {len(unique)}')
 
