@@ -4,11 +4,11 @@ with sq.connect('saper.db') as con:
     cur = con.cursor()
 
     cur.execute('''CREATE TABLE IF NOT EXISTS ТОВАРЫ(
-    код_товара INTEGER,
-    наименование_товара TEXT,
-    наименование_магазина TEXT,
-    заявки_магазина TEXT,
-    кол_во_товара_на_скалде INTEGER,
+    item_id INTEGER,
+    item_name TEXT,
+    store_name TEXT,
+    post_store TEXT,
+    how_many_in_store INTEGER,
     единиицы_измерения INTEGER,
     оптовая_цена INTEGER
 

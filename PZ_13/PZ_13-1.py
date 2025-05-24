@@ -8,10 +8,10 @@ b = [
 ]
 a = []
 for i in range(1, len(b) - 1):
-    row = []
+    r = []
     for j in range(1, len(b[0]) - 1):
-        row.append(b[i][j])
-    a.append(row)
+        r.append(b[i][j])
+    a.append(r)
 
 print(f"новая матрица: \n{a}")
 
