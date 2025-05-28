@@ -6,18 +6,16 @@ b = [
     [5, -6, 7, 8],
     [-9, 10, 11, 12]
 ]
-a = []
-for i in range(1, len(b) - 1):
-    r = []
-    for j in range(1, len(b[0]) - 1):
-        r.append(b[i][j])
-    a.append(r)
 
-print(f"новая матрица: \n{a}")
+inr = b[1:-1]
 
-for i in range(len(a)):
-    for j in range(len(a[i])):
-        if a[i][j] < 0:
-            a[i][j] = a[i][j] ** 2
 
-print(f'отрицательные элементы в квадрате: \n{a}')
+a = list(map(lambda row: row[1:-1], inr))
+
+print(f"новая матрица: {a}")
+a = list(map(
+    lambda r: list(map(lambda x: x**2 if x < 0 else x, r)),
+    a
+))
+
+print(f'отрицательные элементы в квадрате: {a}')

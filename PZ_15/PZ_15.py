@@ -13,5 +13,4 @@ with sq.connect('saper.db') as con:
     оптовая_цена INTEGER
 
     )''')
-
     cur.execute('''INSERT INTO ТОВАРЫ VALUES(1,"апельсины","пятерочка","задолженности_поставщиков",1,2,36)''')
