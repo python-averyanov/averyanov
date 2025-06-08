@@ -3,34 +3,44 @@
 # четные элементы А, в С – нечетные элементы А.  Произвести суммирование
 # соответствующих элементов последовательностей В и С. Найти минимальный элемент
 # полученной последовательности.
-import random
-A = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-B = []
-C = []
-Fin = []
+# import random
+# A = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+# B = []
+# C = []
+# Fin = []
+#
+# def aga(N):
+#     for i in range(len(N)):
+#         Fin.append(B[i] + C[i])
+#         i += 1
+#     print("сумма чисел: ",Fin)
+#     print("минимальное значение: ",min(Fin))
+#
+#
+# for i in range(len(A)):
+#     a = random.randint(1, 50)
+#     A[i] = a * A[i]
+# print("список А: ",A)
+# list(map(lambda x: B.append(x) if not x % 2 else None, A))
+# list(map(lambda x: C.append(x) if x % 2 else None, A))
+# print("список B: ",B)
+# print("список C: ",C)
+# if len(B) > len(C):
+#     aga(C)
+# elif len(B) < len(C):
+#     aga(B)
+# elif len(B) == len(C):
+#     aga(B)
 
-def aga(N):
-    for i in range(len(N)):
-        Fin.append(B[i] + C[i])
-        i += 1
-    print("сумма чисел: ",Fin)
-    print("минимальное значение: ",min(Fin))
+try:
+    with open("example.txt", "r", encoding="utf-8") as file:
+        content = file.read()
 
+    with open("copy_example.txt", "w", encoding="utf-8") as tar:
+        tar.write(content)
 
-for i in range(len(A)):
-    a = random.randint(1, 50)
-    A[i] = a * A[i]
-print("список А: ",A)
-list(map(lambda x: B.append(x) if not x % 2 else None, A))
-list(map(lambda x: C.append(x) if x % 2 else None, A))
-print("список B: ",B)
-print("список C: ",C)
-if len(B) > len(C):
-    aga(C)
-elif len(B) < len(C):
-    aga(B)
-elif len(B) == len(C):
-    aga(B)
-
+    print("Файл успешно скопирован.")
+except FileNotFoundError:
+    print("Ошибка: исходный файл 'example.txt' не найден.")
 
 
