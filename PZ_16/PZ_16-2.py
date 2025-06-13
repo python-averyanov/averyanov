@@ -9,9 +9,10 @@ class Square(Figura):
     def __init__(self,side):
         self.side = side
 
-
     def one(self):
         return self.side ** 2
+
+
 
 class Long_square(Figura):
     def __init__(self,width,height):
